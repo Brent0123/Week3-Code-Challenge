@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatdango</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatdango</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <aside>
-            <h2>Movies</h2>
-            <ul id="films"></ul>
-        </aside>
-        <main>
-            <div id="movieDetails">
-                <h1 id="movieTitle"></h1>
-                <img id="moviePoster" src="" alt="Movie Poster">
-                <p id="movieRuntime"></p>
-                <p id="movieShowtime"></p>
-                <p id="availableTickets"></p>
-                <button id="buyTicket">Buy Ticket</button>
-            </div>
-        </main>
-    </div>
-    <script src="index.js"></script>
+  <header>
+    <h1>Flatiron Movie Theater 🎬</h1>
+  </header>
+  
+  <main>
+    <!-- Movie List -->
+    <section id="movie-list">
+      <h2>Now Showing</h2>
+      <ul id="films"></ul>
+    </section>
+
+    <!-- Movie Details -->
+    <section id="movie-details">
+      <div class="movie-poster">
+        <img id="poster" src="" alt="Movie Poster">
+      </div>
+      <div class="movie-info">
+        <h2 id="title"></h2>
+        <p><strong>Runtime:</strong> <span id="runtime"></span> mins</p>
+        <p><strong>Showtime:</strong> <span id="showtime"></span></p>
+        <p><strong>Description:</strong> <span id="description"></span></p>
+        <p><strong>Available Tickets:</strong> <span id="available-tickets"></span></p>
+        <button id="buy-ticket" class="btn">Buy Ticket</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
