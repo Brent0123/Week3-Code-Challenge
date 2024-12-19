@@ -1,4 +1,4 @@
-/* General Styles */
+/* General styles for the entire page */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -6,6 +6,7 @@ body {
   padding: 0;
 }
 
+/* Header styling */
 header {
   background-color: #333;
   color: white;
@@ -13,15 +14,18 @@ header {
   text-align: center;
 }
 
+/* Main content layout */
 main {
   display: flex;
   margin: 1rem;
 }
 
+/* Headings */
 h1, h2 {
   margin: 0;
 }
 
+/* List styling for movies */
 ul {
   list-style: none;
   padding: 0;
@@ -41,6 +45,7 @@ li:hover {
   background-color: #eee;
 }
 
+/* Style for sold out movies */
 .sold-out {
   background-color: #ffcccc;
   color: #a33;
@@ -48,11 +53,13 @@ li:hover {
   text-decoration: line-through;
 }
 
+/* Movie list section */
 #movie-list {
   width: 30%;
   padding-right: 1rem;
 }
 
+/* Movie details section */
 #movie-details {
   width: 70%;
   display: flex;
@@ -60,17 +67,20 @@ li:hover {
   align-items: center;
 }
 
+/* Movie poster */
 .movie-poster img {
   width: 300px;
   height: auto;
   border-radius: 10px;
 }
 
+/* Movie information */
 .movie-info {
   margin-top: 1rem;
   text-align: center;
 }
 
+/* Button styling */
 .btn {
   background-color: #4CAF50;
   color: white;
@@ -87,6 +97,7 @@ li:hover {
   background-color: #45a049;
 }
 
+/* Styling for sold out button */
 .btn.sold-out-btn {
   background-color: #a33;
   cursor: not-allowed;
