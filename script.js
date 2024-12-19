@@ -77,4 +77,3 @@ function markAsSoldOut() {
     );
     if (soldOutItem) soldOutItem.classList.add("sold-out");
 }
-
